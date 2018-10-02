@@ -1,0 +1,15 @@
+{
+    "name": "wilder2/quete_simple_mvc",
+    "authors": [
+        {
+            "name": "Thomas Pecout",
+            "email": "pecoutt@hotmail.fr"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "": "src/"
+        }
+    }
+}
