@@ -1,7 +1,7 @@
 <?php
 // src/Model/CategoryManager.php
 namespace Model;
-require __DIR__ . '/../../app/db.php';
+//require __DIR__ . '/../../app/db.php';
 
 class CategoryManager
 {
