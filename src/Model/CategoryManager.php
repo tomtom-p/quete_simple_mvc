@@ -7,7 +7,7 @@ class CategoryManager
 {
     public function selectAllCategory() :array
     {
-        $pdo = new \PDO(DSN, USER, PASS);
+        //$pdo = new \PDO(DSN, USER, PASS);
         $query = "SELECT * FROM Category";
         $res = $pdo->query($query);
         return $res->fetchAll();
@@ -15,7 +15,7 @@ class CategoryManager
     // la méthode prend l'id en paramètre
     public function selectOneCategory(int $id) : array
     {
-        $pdo = new \PDO(DSN, USER, PASS);
+        //$pdo = new \PDO(DSN, USER, PASS);
         $query = "SELECT * FROM Category WHERE idCategory = :id";
         $statement = $pdo->prepare($query);
         $statement->bindValue(':id', $id, \PDO::PARAM_INT);

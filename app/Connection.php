@@ -14,6 +14,9 @@ class Connection
 {
     private $pdoConnection;
 
+    /**
+     * Connection constructor.
+     */
     public function __construct()
     {
         try {
@@ -34,6 +37,9 @@ class Connection
         }
     }
 
+    /**
+     * @return PDO
+     */
     public function getPdoConnection() :PDO
     {
         return $this->pdoConnection;
